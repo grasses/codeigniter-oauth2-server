@@ -20,13 +20,9 @@ For test result: [http://oauth2.homeway.me/oauth/test](http://oauth2.homeway.me/
 
 1.Clone pakcage
 
-> git clone https://github.com/grasses/codeigniter-oauth2-server
+> git clone https://github.com/grasses/codeigniter-oauth2-server /path/to/www/root/
 
-2.copy to web directory
-
-> cp -fr codeigniter-oauth2-server /path/to/www/root/
-
-3.Config database -> $db['oauth']
+2.Config database -> $db['oauth']
 
 > cd codeigniter-oauth2-server
 
@@ -34,7 +30,7 @@ For test result: [http://oauth2.homeway.me/oauth/test](http://oauth2.homeway.me/
 
 config `dsn`, `hostname`, `username`, `password`, `database`
 
-4.Import database
+3.Import database
 
 > mysqldump -u root -p > sql/oauth.sql
 
