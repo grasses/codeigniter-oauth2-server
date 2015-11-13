@@ -4,6 +4,8 @@
 
 CodeIgniter OAuth2 Server, a CodeIgniter package for OAuth2.0 Server,
 
+For OAuth2.0 client: [https://github.com/philsturgeon/codeigniter-oauth2](https://github.com/philsturgeon/codeigniter-oauth2)
+
 For OAuth2.0: [http://oauth.net/2/](http://oauth.net/2/)
 
 Learn OAuth2.0 protocol: [http://bshaffer.github.io/oauth2-server-php-docs/overview/grant-types/](http://bshaffer.github.io/oauth2-server-php-docs/overview/grant-types/)
@@ -20,15 +22,28 @@ For test result: [http://oauth2.homeway.me/oauth/test](http://oauth2.homeway.me/
 
 > git clone https://github.com/grasses/codeigniter-oauth2-server
 
-2.Config database -> $db['oauth']
+2.copy to web directory
+
+> cp -fr codeigniter-oauth2-server /path/to/www/root/
+
+3.Config database -> $db['oauth']
 
 > cd codeigniter-oauth2-server
 
 > vim application/config/database.php
 
-3.Import database
+config `dsn`, `hostname`, `username`, `password`, `database`
+
+4.Import database
 
 > mysqldump -u root -p > sql/oauth.sql
+
+5.see http://127.0.0.1/oauth/test 
+
+
+# Usage
+
+------------------------
 
 
 
@@ -45,3 +60,8 @@ For test result: [http://oauth2.homeway.me/oauth/test](http://oauth2.homeway.me/
 * Support for Mysql, Redis, Mongo
 
 
+# License
+
+------------------------
+
+This library is under the MIT license. For the full copyright and license information, please view the LICENSE file that was distributed with this source code.
