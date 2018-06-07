@@ -15,7 +15,7 @@
     <link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
+<div class="container">
 <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8">
@@ -88,6 +88,7 @@
             <br><br>
         </form>
     </div>
+</div>
 </div>
 
 <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
